@@ -1,0 +1,83 @@
+/* Mobile First: Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #ffc0d7;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Estilos de las cards */
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 1rem;
+    text-align: left;
+}
+
+.card-content h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: #007BFF;
+}
+
+.card-content p {
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+    .cards {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
